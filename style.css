@@ -1,0 +1,472 @@
+body {
+    margin: 0;
+    /* overflow: hidden; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-bar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #F7F9F5;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.nav-right {
+    display: flex;
+    margin-right: 6rem;
+    align-items: center;
+}
+
+.nav-right div {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+}
+.nav-left img {
+    height: 2.25rem;
+    margin-right: 0.7rem;
+}
+
+.home-btn {
+    height: 2.4rem;
+    color: #228B4E;
+    background-color: #E0ECE3;
+    padding: 0 15px 0 15px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nav-right div i {
+    margin-right: 0.5rem;
+}
+
+.browse-recipes, .whats-in-your-kitchen, .favourites {
+    color: #63766E;
+}
+
+.browse-recipes:hover, .whats-in-your-kitchen:hover, .favourites:hover {
+    color: #228B4E;
+    cursor: pointer;
+}
+
+.l1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #AFD6BE;
+    display: flex;
+    color: #158443;
+    background-color: #DDEDE1;
+    width: fit-content;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 9999px;
+}
+.l1 p {
+    margin: 0 0 0 0.3rem;
+}
+
+.main-content {
+    background-color: #E4F8EC;
+    padding-top: 3.75rem;
+    display: flex;
+    padding: 9rem 6rem 6rem 6rem;
+}
+
+.main-content h1 span {
+    color: #158443;
+}
+
+.img1 {
+    height: 20rem;
+    transform: rotate(-5deg);
+    z-index: 2;
+    position: relative;
+    top: 4.5rem;
+}
+.img2 {
+    height: 30rem;
+    border-radius: 20px;
+    transform: rotate(2deg);
+    z-index: 1;
+}
+.img3 {
+    height: 12rem;
+    position: absolute;
+    right: 30rem;
+    top: 33rem;
+    z-index: 3;
+}
+
+.description {
+    width: 40%;
+}
+
+.photos {
+    display: flex;
+    width: 60%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.description h1 {
+    font-size: 5rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.t1 {
+    font-size: 1.125rem;
+}
+
+.img1, .img3 {
+    border: 4px solid white;
+    border-radius: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: left;
+    margin-top: 3rem;
+}
+
+.search-bar {
+    background-color: white;
+    border: 1px solid #4b775e;
+    height: 3rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem 0 1rem;
+}
+.search-bar:focus-within {
+    border-color: #158443;
+    box-shadow: 0 0 5px 1px rgb(21, 132, 67, 0.5);
+}
+
+.search-input {
+    all: unset;
+    margin-left: 1rem;   
+}
+
+.search-bar i {
+    opacity: 0.5;
+}
+
+.search-btn {
+    border-radius: 9999px;
+    background-color: #158443;
+    color: white;
+    border: none;
+    margin-left: 0.6rem;
+    padding: 0 1.7rem 0 1.7rem;
+    font-size: 1rem;
+}
+.search-btn:hover {
+    cursor: pointer;
+    background-color: #2B8F55;
+}
+
+.popular {
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+
+.popular-options {
+    display: flex;
+}
+
+.popular-options p {
+    border: 1px solid #4b775e;
+    border-radius: 9999px;
+    background-color: white;
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+
+.popular p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.line {
+    border: 1px solid rgb(75, 119, 94, 0.1);
+    margin-top: 2rem;
+}
+
+.description-end {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.pair {
+    display: flex;
+    align-items: center;
+}
+
+.pair i {
+    color: #268D50;
+    margin-right: 0.3rem;
+}
+
+.description-end p {
+    font-size: 0.7rem;
+    margin: 0;
+    margin-top: 0.3rem;
+}
+
+.description-end div {
+    margin-right: 3rem;
+}
+
+.pair h2 {
+    margin: 0;
+}
+
+
+/* The catalog */
+.the-catalog {
+    padding: 0 6rem 0 6rem;
+    background-color: #E4F8EC;
+}
+
+.the-catalog-heading p, .the-catalog-heading h1{
+    margin: 0;
+}
+
+.t2 {
+    color: #158443;
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+
+.the-catalog-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.t3 {
+    display: flex;
+    align-items: center;
+}
+
+.t3 p {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.the-catalog-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.card {
+    height: 15rem;
+    width: 20rem;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-desc {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7) 0%,   
+        rgba(0, 0, 0, 0.4) 60%,   
+        rgba(0, 0, 0, 0) 100%   
+    );
+    padding: 5rem 0 1.3rem 1rem;
+}
+
+.card-desc h3, .card-desc p {
+    margin: 0;
+    color: white;
+}
+
+.card-desc p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.7;
+    margin-top: 0.2rem;
+}
+
+
+.most-loved {
+    padding: 6rem 6rem 0 6rem;
+    background-color: #E4F8EC;
+}
+
+.most-loved p, .most-loved h1{
+    margin: 0;
+}
+
+.most-loved-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.t3 {
+    display: flex;
+    align-items: center;
+}
+
+.t3 p {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.most-loved-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.card2 {
+    height: 30.5rem;
+    width: 26.5rem;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.card2-img {
+    width: 100%;
+    height: 65%;
+}
+
+.card2-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2-desc {
+    padding: 1.2rem;
+}
+
+.card2-line1 {
+    display: flex;
+    /* padding: 1rem 0 1rem 1rem; */
+}
+
+.card2-line1 p {
+    margin-right: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #117F60;
+}
+
+.card2-desc h3 {
+    margin: 0.7rem 0 0.7rem 0;
+    font-weight: 600;
+}
+
+.card2-line3 {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.card2-last-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card2-last-line div {
+    display: flex;
+    align-items: center;
+    padding-top: 0.7rem;
+}
+
+.card2-last-line div i {
+    margin-right: 0.3rem;
+}
+
+.card2-last-line div i, .card2-last-line div p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.clock {
+    margin-right: 1rem;
+}
+
+.star i {
+    color: #D97706;
+}
+
+.star p {
+    color: #D97706;
+    font-weight: 700;
+}
+
+
+
+.last-part {
+    background-color: #E4F8EC;
+    padding: 6rem;
+}
+
+.last-img {
+    height: 23rem;
+    background-color: #D97706;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+}
+
+.last-part img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.last-part-ai {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    background-color: rgb(128, 128, 128, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.last-part-ai p {
+  margin: 0;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
